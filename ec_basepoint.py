@@ -86,3 +86,5 @@ print(P224.is_point_on_curve(Q[0], Q[1]))
 
 Q = P224.multiple(n, G)
 print(Q == INF_POINT)
+
+
