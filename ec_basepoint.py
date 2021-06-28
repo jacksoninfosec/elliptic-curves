@@ -33,8 +33,6 @@ class EllipticCurve:
 
 	def multiple(self, k, P):
 		Q = INF_POINT
-		if k == 0:
-			return Q
 		while k != 0:
 			if k & 1 != 0:
 				Q = self.addition(Q, P)
